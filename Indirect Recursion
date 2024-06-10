@@ -1,4 +1,7 @@
 #include <stdio.h>
+void funB(int);
+void funA(int);
+
 void funA(int n)
 {
     if(n>=0)
