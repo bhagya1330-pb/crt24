@@ -1,0 +1,17 @@
+#include <stdio.h>
+void increment()
+{
+    static int a=1;
+    printf("%d ",a);
+    a++;
+}
+int main()
+{
+    increment();
+    increment();
+    increment();
+}
+Output
+1 2 3 
+
+=== Code Execution Successful ===
