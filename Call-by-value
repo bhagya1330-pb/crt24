@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+void swap(int x,int y)
+{
+    int t;
+    t=x;
+    x=y;
+    y=t;
+}
+int main()
+{
+ int a,b;
+ printf("Enter two numbers:\n");
+ scanf("%d%d",&a,&b);
+ printf("Values before swapping a=%d b=%d\n",a,b);
+ swap(a,b);
+printf("Values after swapping a=%d b=%d\n",a,b);
+}
+Output
+Enter two numbers:
+12
+3
+Values before swapping a=12 b=3
+Values ater swapping a=12 b=3
+
+
+=== Code Execution Successful ===
