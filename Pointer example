@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+ int a=34;
+ printf("Value of a=%d\n",a);
+ printf("Address of a=%u\n",&a);
+ printf("Value of a=%d\n",*(&a));
+}
+Output
+Value of a=34
+Address of a=1133811804
+Value of a=34
+
+
+=== Code Execution Successful ===
