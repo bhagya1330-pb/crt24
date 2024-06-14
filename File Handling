@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int admno,mat,phy,che,tot;
+    float avg;
+    char name[40];
+    printf("Enter admno:");
+    scanf("%d",&admno);
+    printf("Enter name:");
+    scanf("%s",name);
+    printf("Enter 3 subject marks:");
+    scanf("%d%d%d",&mat,&phy,&che);
+    tot=mat+phy+che;
+    avg=tot/3;
+    printf("Admission no     =%d\n",admno);
+    printf("Name      =%s\n",name);
+    printf("Maths     =%d\n",mat);
+    printf("Physics   =%d\n",phy);
+    printf("Chemistry =%d\n",che);
+    printf("Total     =%d\n",tot);
+    printf("Averge    =%f\n",avg);
+}
+Output
+Enter admno:58
+Enter name:Bhagya
+Enter 3 subject marks:45
+68
+75
+Admission no     =58
+Name      =Bhagya
+Maths     =45
+Physics   =68
+Chemistry =75
+Total     =188
+Averge    =62.000000
+
+
+=== Code Execution Successful ===
