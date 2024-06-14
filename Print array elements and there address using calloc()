@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+ int *a,i;
+ //a=(int*)malloc(sizeof(int));
+ a=(int*)calloc(5,sizeof(int));
+ printf("Enter 5 elements:\n");
+ for(i=0;i<5;i++)
+ {
+     scanf("%d",(a+i));
+ }
+ printf("Values are\n");
+ for(i=0;i<5;i++)
+ {
+     printf("%d Address=%u\n",*(a+i));
+ }
+}
+Output
+Enter 5 elements:
+23
+4
+45
+56
+78
+Values are
+23 Address=0
+4 Address=4
+45 Address=8
+56 Address=12
+78 Address=16
+
+
+=== Code Execution Successful ===
